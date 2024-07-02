@@ -8,19 +8,24 @@
 </head>
 <body>
     <!-- Ini Navigation -->
-    <header class="nav-container">
-        <div class="logo-icon">
-
-        </div>
-
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Our Profile</a>
-            <a href="#">Portofolio</a>
-            <a href="#">Message Us</a>
-        </nav>
-    </header>
-    <hr>
+    <nav>
+        <label class="logo">UM</label>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Our Profile</a>
+            </li>
+            <li>
+                <a href="#">Portofolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    
 
     <!-- Ini home -->
     <section>
@@ -62,6 +67,8 @@
         </div>
      </section>
 
+     <hr>
+
      <!-- Ini Message Us -->
       <section>
         <header>
@@ -82,8 +89,11 @@
                 <input type="radio" id="pr" name="jenis kelamin">
             </div>
             <br>
-            <label for="pesan">Pesan :</label>
-            <input type="textarea" id="pesan">
+            <div class="textarea">
+                <label for="pesan">Pesan :</label>
+                <textarea id="pesan"></textarea>
+            </div>
+            <input type="button" value="submit">
             
         </div>
       </section>
