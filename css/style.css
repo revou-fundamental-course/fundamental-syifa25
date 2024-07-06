@@ -1,63 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-
-body{
-    background-color: #30274a;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: #fffaf6;
+    margin: 0;
+    padding: 0;
+    font-family: nunito;
+    color: #856564;
+}
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
 }
 nav{
-    background-color: #f2eceb00;
+    background-color: #fffaf6;
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem; /*1rem untuk atas bawah 2 rem untuk kanan kiri  */
-    position: sticky;
+    position: fixed;
     top: 0;
-    
+    z-index: 100;
+    align-items: center;
+    width: 100%;
+}
+.logo1 {  
+    color: #e1acab;
+    font-weight: 700;
+    font-size: 2.5rem;
+    cursor: default;
+}
+.logo2 {
+    color: #9db6d9;
+    font-weight: 700;
+    font-size: 2.5rem;
+    cursor: default;
 }
 
-nav div img{
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-
-}
 nav ul{
     display: flex;
     list-style: none;
     align-items: center;
     gap: 2rem;
+    margin-block: 0;
 }
 nav ul li a{
     text-decoration: none;
     font-family: 'Segoe UI',sans-serif;
-    color: white;
+    color: #856564;  
     font-weight: 600;
     padding: 8px 0;
     transition: all;
     transition-duration: 300ms;
-    border-bottom: 1px solid #e5c83600;
+    border-bottom: 1px solid #9db6d900;
+    
 }
 nav ul li a:hover{
-    border-bottom: 1px solid #e5c736;
-    color: #e5c736;
+    border-bottom: 1px solid #9db6d9;
+    color: #9db6d9;
 }
-.gambar{
-    width: 100%;
-    height: 578px;
-    border: 1px solid black;
+#menu-icon{
+    font-size: 3.6rem;
+    color: #856564;
+    display: none;
 }
-.op-circle{
+.home{
     display: flex;
-    gap: 20px;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pembuka {
+    
+}
+.pembuka h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.pembuka p{
+    font-size: 20px;
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+    font-weight: 500;
+}
+
+.images {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    margin-top: 15px;
+}
+.images img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape {
+    bottom: 40px;
+}
+.images:hover .kucing {
+    left: 45%;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;
+}
+.about-image img{
+    width: 45vw;
+}
+.heading{
     text-align: center;
 }
-.frame{
-    text-align: center;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    border: 1px solid;
+.about-content h2{
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.about-content h3{
+    font-size: 20px;
+    margin: 0 0;
+}
+.about-content p{
+    margin-top: 20px;
+    margin-right: 2rem;
+    text-align: justify;
+}
+.portofolio{
+
 }
 .textarea {
     display: flex;
