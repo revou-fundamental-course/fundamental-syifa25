@@ -28,7 +28,7 @@
                 <a href="#portofolio">Portofolio</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
     </nav>
@@ -66,7 +66,7 @@
         <h2 class="heading">Latest Project</h2>
 
         <div class="portofolio-container">
-            <div class="portofolio-box">
+            <div class="portofolio-box">  
                 <img src="assets/image1.jpeg" alt="">
 
                 <div class="portofolio-layer">
@@ -106,31 +106,37 @@
     
 
      <!-- Ini Message Us -->
-      <section>
-        <header>
-            <h1>Message Us</h1>
-        </header>
-        <div class="mu-container">
-            <label for="nama">Nama :</label>
-            <input type="text" id="nama" placeholder="Enter Your Name" required>
-            <br>
-            <label for="lahir">Tanggal Lahir :</label>
-            <input type="date" id="lahir">
-            <br>
-            <div class="gender">
-                <p>Jenis Kelamin :</p>
-                <label for="lk">Laki-Laki</label>
-                <input type="radio" id="lk" name="jenis kelamin">
-                <label for="pr">Perempuan</label>
-                <input type="radio" id="pr" name="jenis kelamin">
+      <section class="contact" id="contact">
+        <h2 class="heading">Contact Me</h2>
+        <div class="input-box">
+            <div class="row">
+                <div class="input">
+                    <input type="text" id="nama" placeholder="Enter Your Name" required class="allinput">
+                </div>
+                
+                <div class="input">
+                    <input type="date" id="lahir" class="allinput">
+                </div>
             </div>
-            <br>
-            <div class="textarea">
-                <label for="pesan">Pesan :</label>
-                <textarea id="pesan"></textarea>
-            </div>
-            <input type="button" value="submit">
             
+            <br>
+            <div class="input" id="jeniskelamin">
+                <label for="lk">Male</label>
+                <input type="radio" id="lk" name="jenis kelamin">
+                <label for="pr">Famale</label>
+                <input type="radio" id="pr" name="jenis kelamin" >
+            </div>
+            <br>
+            <div class="input">
+                <input type="email" id="email" placeholder="Email Address" class="allinput">
+            </div>
+            <div class="input">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="allinput"></textarea>
+            </div>
+            <br>
+            <button type="submit">Send Message</button>
+            
+
         </div>
       </section>
 </body>
